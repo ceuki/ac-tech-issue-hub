@@ -1,119 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amazon Connect Tech Issue Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Connect Tech Issue Hub</title>
 
-<style>
-*{
-    box-sizing:border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f3f4f6;
-    color:#16191f;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f4f6;
+      color: #16191f;
+    }
 
-header{
-    background:#101820;
-    color:white;
-    padding:28px 24px;
-    border-bottom:4px solid #ff9900;
-}
+    header {
+      background: #101820;
+      color: #ffffff;
+      padding: 30px 24px;
+      border-bottom: 4px solid #ff9900;
+    }
 
-.header-inner{
-    max-width:1100px;
-    margin:auto;
-}
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
 
-header h1{
-    margin:0 0 7px;
-    font-size:27px;
-}
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
 
-header p{
-    margin:0;
-    color:#d5dbdb;
-    font-size:14px;
-}
+    header p {
+      margin: 0;
+      color: #d5dbdb;
+      font-size: 14px;
+    }
 
-main{
-    max-width:1100px;
-    margin:50px auto;
-    padding:0 24px;
-}
+    main {
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
 
-.intro{
-    margin-bottom:28px;
-}
+    .intro {
+      margin-bottom: 28px;
+    }
 
-.intro h2{
-    margin-bottom:8px;
-    font-size:23px;
-}
+    .intro h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
 
-.intro p{
-    color:#5f6b7a;
-    line-height:1.6;
-}
+    .intro p {
+      margin: 0;
+      color: #5f6b7a;
+      line-height: 1.6;
+    }
 
-.tools{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:24px;
-}
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
 
-.card{
-    background:white;
-    border:1px solid #d5dbdb;
-    border-radius:10px;
-    padding:28px;
-    box-shadow:0 2px 7px rgba(0,0,0,.06);
-}
+    .card {
+      background: #ffffff;
+      border: 1px solid #d5dbdb;
+      border-radius: 10px;
+      padding: 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
 
-.label{
-    display:inline-block;
-    color:#0972d3;
-    background:#eef7ff;
-    font-weight:700;
-    font-size:12px;
-    padding:6px 9px;
-    border-radius:4px;
-    margin-bottom:16px;
-}
+    .label {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      background: #eef7ff;
+      color: #0972d3;
+      font-size: 12px;
+      font-weight: 700;
+    }
 
-.card h3{
-    font-size:21px;
-    margin:0 0 10px;
-}
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+    }
 
-.card p{
-    color:#5f6b7a;
-    line-height:1.6;
-    margin-bottom:24px;
-}
+    .card p {
+      min-height: 72px;
+      margin: 0 0 24px;
+      color: #5f6b7a;
+      line-height: 1.6;
+    }
 
-.button{
-    display:inline-block;
-    text-decoration:none;
-    background:#ff9900;
-    color:#16191f;
-    font-weight:700;
-    padding:11px 18px;
-    border-radius:5px;
-}
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 5px;
+      background: #ff9900;
+      color: #16191f;
+      font-weight: 700;
+      text-decoration: none;
+    }
 
-.button:hover{
-    background:#ec8b00;
-}
+    .button:hover {
+      background: #ec8b00;
+    }
 
-.secondary{
-    background:#0972d3;
-    color:white;
-}
+    .button.blue {
+      background: #0972d3;
+      color: #ffffff;
+    }
 
-.secondary:hover{
-    background:#075fae
+    .button.blue:hover {
+      background: #075fae;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 24px 30px;
+      color: #697586;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .tools {
+        grid-template-columns: 1fr;
+      }
+
+      .card p {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>Amazon Connect Tech Issue Hub</h1>
+      <p>UKI M1 Beverages &amp; M2 Confectionery</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Select a tool</h2>
+      <p>
+        Report Amazon Connect technical issues or analyse agent logs
+        using the appropriate tool below.
+      </p>
+    </section>
+
+    <section class="tools">
+
+      <div class="card">
+        <span class="label">FOR ADVISORS</span>
+
+        <h3>AC Advisor Reporter</h3>
+
+        <p>
+          Record an Amazon Connect technical issue and generate the
+          standard compact report and Excel-ready tracker row.
+        </p>
+
+        <a class="button" href="./advisor-reporter.html">
+          Open Advisor Reporter
+        </a>
+      </div>
+
+      <div class="card">
+        <span class="label">FOR TA / OIC / ANALYST</span>
+
+        <h3>AC Tech Issue Analyzer</h3>
+
+        <p>
+          Upload and analyse Amazon Connect agent logs for technical
+          findings, evidence, recovery status and RCA.
+        </p>
+
+        <a class="button blue" href="./tech-issue-analyzer.html">
+          Open Log Analyzer
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Amazon Connect Tech Issue Hub | Internal workflow prototype
+  </footer>
+
+</body>
+</html>
